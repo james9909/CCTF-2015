@@ -1,0 +1,2 @@
+In inspect element, we can change the values of the choices. Changing them to
+incredibly high numbers and submitting them yields the flag.
