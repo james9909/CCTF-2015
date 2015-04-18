@@ -1,0 +1,2 @@
+Viewing the page source on the website reveals the password, which is used to log in and
+get the flag.
