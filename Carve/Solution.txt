@@ -1,0 +1,3 @@
+Looking at the hex of the picture, we can see that there is acually hex code for 2
+pictures, since we can see that there are 2 PNG headers. Copy pasting the second half
+of the hex code into another picture will give us the second picture, which contains the flag.
