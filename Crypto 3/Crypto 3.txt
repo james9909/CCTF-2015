@@ -1,0 +1,1 @@
+I converted the base 64 ciphertext to text.
