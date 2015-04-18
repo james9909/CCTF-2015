@@ -1,0 +1,3 @@
+Viewing the site's robot.txt at web.camsctf.com/robots.txt allows us to see where the
+robot cannot visit. If we follow the link, we see the password, and when
+entered into password field on the web page, we get the flag.
