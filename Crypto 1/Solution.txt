@@ -1,0 +1,1 @@
+The file is in binary, so if we turn it into ascii, we get the flag.
