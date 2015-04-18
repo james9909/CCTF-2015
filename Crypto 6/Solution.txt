@@ -1,0 +1,3 @@
+This is a two step process, with the first step being to remove one backslash from
+each set of two backslashes.
+Then, proceed to take a lot of time reading out the txt
