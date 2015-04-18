@@ -1,0 +1,2 @@
+Viewing the picture in notepad or any plain text editor will reveal the flag, but
+so will viewing its hex code.
