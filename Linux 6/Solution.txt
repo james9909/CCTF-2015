@@ -1,0 +1,1 @@
+Logging into linuxuser123 and viewing the .bash_history will yield the flag.
