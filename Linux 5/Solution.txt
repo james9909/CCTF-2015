@@ -1,0 +1,2 @@
+Looking at the the /dev/sda4 partition shows that there is a file called flag.txt
+Opening the file gives us the flag.
