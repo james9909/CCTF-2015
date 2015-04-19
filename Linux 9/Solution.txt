@@ -1,0 +1,8 @@
+You need to read flag.txt from the /home/flag/.
+As you don't have sufficient permission to do so, you can:
+1. Boot up, wait for GRUB
+2. Press 'e' to edit one of the options
+3. Append 'init=/bin/bash' to the line starting with 'linux'
+4. Mount the filesystem: `mount -n -o remount,rw /`
+5. Do `passwd` to change root password
+With root access, just read the file.
