@@ -1,0 +1,2 @@
+Using gimp to open the background picture and looking at the layers in the picture
+will yield the flag.
