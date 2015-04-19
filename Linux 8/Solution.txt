@@ -1,0 +1,2 @@
+Looking through the Trash on the linuxuser123 account shows us that there is a folder called
+root, and within it there is a file called passwd, which contains the flag.
