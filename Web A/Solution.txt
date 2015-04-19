@@ -1,0 +1,6 @@
+This problem requires basic knowledge of how to perform an SQL injection. If we cancel the
+login, we are brought to the screen which tells us that the password is hashed, and that
+the query checks to see if only one row is returned. We do not need to know the password, and
+just limit the number of rows down to one. We can do this by setting the username to
+
+    ' OR 1=1 LIMIT 1 --
