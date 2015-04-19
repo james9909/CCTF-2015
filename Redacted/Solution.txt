@@ -1,0 +1,2 @@
+Extracting the pdf gave us the black boxes and the unredacted pdf. Read the pdf
+to find the flag.
