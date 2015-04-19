@@ -1,0 +1,2 @@
+just xor the each element of array with 0x1092.
+{i_am_java_master}
