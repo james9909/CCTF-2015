@@ -1,0 +1,16 @@
+To solve this problem, I used the Windows cmd prompt (ik who uses that right)
+
+The problem name is Stream 1, and the hint at the home page suggests that something is
+hidden via a method called alternate data stream. A quick look at the hex for the rar
+reveals that within there somewhere is a file called flag.txt. If we extract the file
+however, we are given a docx file which says that there is nothing to see. On the contrary,
+if we type in:
+
+    dir /r
+
+We can see that there is a hidden file called secret.docx:flag.txt, with flag.txt
+being in an alternate data stream. By cat-ting the file with
+
+    cat secret.docx:flag.txt
+
+we are given the flag.
