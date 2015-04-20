@@ -1,0 +1,6 @@
+Searching for mediocre-guy on tumblr shows that there is an actual user with that
+username. The hint tell us to filter through his posts, so we can try to filter
+by tag. If we filter by the tag 'flag', we find a lot of posts, but one of the pictures
+yields the flag.
+
+    http://mediocre-guy.tumblr.com/tagged/flag
