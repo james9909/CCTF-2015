@@ -1,0 +1,1 @@
+Open up firefox and restore the previous session to get the flag.
