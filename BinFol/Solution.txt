@@ -1,0 +1,2 @@
+If we look at the extracted folders, we find that there are missing ones. If we
+make the missing ones count as 0 and the present ones count as 1, we get the flag.
