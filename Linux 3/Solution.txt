@@ -1,0 +1,1 @@
+The user cs has a folder called 2 on the desktop, and grepping for '{' yields the flag.
