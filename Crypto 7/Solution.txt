@@ -1,0 +1,4 @@
+I opened the Anonymous PDF in Adobe Reader and found the Secrets.docx attachment. Then I saw that there was 
+some small line in the document. I realized that there was text in the header and footer, so I resized the text.
+The Google Drive link in the footer led to a .cpt file. I md5 hashed the string in the header, revealing the key.
+Using ccrypt, we were able to decrypt the .cpt file with the key.
