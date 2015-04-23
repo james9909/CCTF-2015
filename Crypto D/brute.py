@@ -34,4 +34,4 @@ for i in range(tot):
         hexified = hex(msg).strip('0x')
         if len(hexified) % 2 == 1:
             hexified = '0' + hexified
-        dec.write("%s: %s\n" % (i, decode_hex(hexified)[0]))
+        dec.write("%s: %s\n" % (d, decode_hex(hexified)[0]))
