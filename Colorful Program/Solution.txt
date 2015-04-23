@@ -1,0 +1,1 @@
+You're given the code for a Piet program that prints the flag. Run it with an interpreter (I had to convert to .png to get an online interpreter to accept it).
