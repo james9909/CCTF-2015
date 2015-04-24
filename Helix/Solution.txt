@@ -1,0 +1,6 @@
+Viewing the hex of the picture shows that there is are ztxt's in there. In order to
+read them, run
+
+    pngtopnm -text output.txt helix.png
+
+Grepping for '{' will yield the flag.
