@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<string name="phone_number"></string>
+<string name="lastSuccessfulLoginUsername">blackout1919</string>
+<int name="score" value="18" />
+<int name="story_privacy_setting" value="2" />
+<string name="transcodingState">TRANSCODING_NOT_SUPPORTED</string>
+<long name="last_address_book_updated_timestamp" value="0" />
+<string name="username">blackout1919</string>
+<string name="checksums_dict_loq_all_updates">{&quot;stories_checksum&quot;:&quot;55e962da3bd73ee5f523d3d611a9a5b0&quot;,&quot;conversations_checksum&quot;:&quot;a6c0b0482dac50357570e52e76aba46d&quot;}</string>
+<boolean name="front_facing_flash_setting" value="false" />
+<boolean name="save_story_to_gallery_enabled" value="true" />
+<string name="video_encoding_resolutions">352x288,640x480,176x144,720x480,1280x720,320x240,800x480,480x320,1920x1088,</string>
+<boolean name="has_seen_snap_onboarding_message" value="true" />
+<boolean name="snapchatUserIsLoggedIn" value="true" />
+<string name="study_settings">{&quot;DOWNLOAD_MANAGER&quot;:{&quot;experimentId&quot;:&quot;1&quot;,&quot;MAX_CONCURRENT_REQUESTS&quot;:&quot;10&quot;,&quot;MAX_CONCURRENT_BACKGROUND_REQUESTS&quot;:&quot;5&quot;},&quot;SNAP_LOADING&quot;:{&quot;BATCH_SIZE_TO_AUTO_LOAD_SNAP_STACK&quot;:&quot;4&quot;,&quot;experimentId&quot;:&quot;1&quot;,&quot;AUTO_LOAD_SNAPS&quot;:&quot;true&quot;,&quot;INITIAL_NUMBER_OF_SNAP_STACKS_TO_LOAD&quot;:&quot;4&quot;,&quot;MAX_NUMBER_OF_SNAP_STACKS_TO_AUTO_LOAD&quot;:&quot;10&quot;,&quot;NUMBER_OF_SNAP_STACKS_TO_AUTO_LOAD&quot;:&quot;1&quot;,&quot;INITIAL_BATCH_SIZE_TO_LOAD_SNAP_STACK&quot;:&quot;4&quot;},&quot;AdManager&quot;:{&quot;network_code&quot;:&quot;80247475&quot;,&quot;experimentId&quot;:&quot;0&quot;,&quot;ad_splash_impression_duration&quot;:&quot;0&quot;,&quot;is_active&quot;:&quot;true&quot;,&quot;ad_page_impression_duration&quot;:&quot;0&quot;,&quot;max_outstanding_ad_requests_v2&quot;:&quot;100&quot;},&quot;EarlyUploadSnaps&quot;:{&quot;experimentId&quot;:&quot;0&quot;,&quot;early_upload_snaps&quot;:&quot;true&quot;},&quot;SPDY&quot;:{&quot;experimentId&quot;:&quot;0&quot;,&quot;ENABLE_SPDY&quot;:&quot;true&quot;},&quot;SPDY_CONNPOOL&quot;:{&quot;experimentId&quot;:&quot;1&quot;,&quot;ENABLE_NEW_POOL&quot;:&quot;false&quot;},&quot;DISCOVER_V2&quot;:{&quot;WIFI_RECENT_USER_THRESHOLD_HOURS&quot;:&quot;72&quot;,&quot;WIFI_RECENT_USER_NUM_DSNAPS_TO_LOAD&quot;:&quot;1&quot;,&quot;experimentId&quot;:&quot;0&quot;,&quot;WAN_NUM_DSNAPS_TO_LOAD_BEFORE_CURRENT&quot;:&quot;1&quot;,&quot;WAN_RECENT_CHANNEL_NUM_DSNAPS_TO_LOAD&quot;:&quot;1&quot;,&quot;WIFI_RECENT_CHANNEL_NUM_DSNAPS_TO_LOAD&quot;:&quot;4&quot;,&quot;WAN_RECENT_CHANNEL_THRESHOLD_HOURS&quot;:&quot;48&quot;,&quot;WIFI_RECENT_CHANNEL_THRESHOLD_HOURS&quot;:&quot;72&quot;,&quot;WAN_NUM_DSNAPS_TO_LOAD_AFTER_CURRENT&quot;:&quot;2&quot;},&quot;STORY_LOADING&quot;:{&quot;INITIAL_NUMBER_OF_FRIEND_STORIES_TO_LOAD&quot;:&quot;3&quot;,&quot;NUMBER_OF_FRIEND_STORIES_TO_AUTO_LOAD&quot;:&quot;1&quot;,&quot;experimentId&quot;:&quot;0&quot;,&quot;INITIAL_NUMBER_OF_SHARED_STORIES_TO_LOAD&quot;:&quot;2&quot;,&quot;MAX_NUMBER_OF_SHARED_STORIES_TO_AUTO_LOAD&quot;:&quot;2&quot;,&quot;AUTO_LOAD_STORIES&quot;:&quot;false&quot;,&quot;MAX_NUMBER_OF_FRIEND_STORIES_TO_AUTO_LOAD&quot;:&quot;5&quot;,&quot;NUMBER_OF_SHARED_STORIES_TO_AUTO_LOAD&quot;:&quot;1&quot;},&quot;DELTA_RESPONSE&quot;:{&quot;experimentId&quot;:&quot;1&quot;,&quot;CONVERSATIONS_DELTA&quot;:&quot;on&quot;,&quot;FRIENDS_STORY_DELTA&quot;:&quot;on&quot;}}</string>
+<string name="auth_token"></string>
+<boolean name="is_searchable_by_phone_number" value="true" />
+<string name="snap_tag_image">qr-add/52ee711e63a91486c2bc2e4882a4d56c</string>
+<boolean name="video_filters" value="true" />
+<string name="display_name"></string>
+<boolean name="is_registering" value="false" />
+<string name="email"></string>
+<boolean name="should_show_suggestion_prompt" value="false" />
+<boolean name="replay_setting" value="false" />
+<boolean name="identity_is_phone_password_confirmed" value="false" />
+<int name="num_snaps_sent" value="1" />
+<int name="snapchatCameraPreference" value="1" />
+<null name="suggestion_prompt_button_text" />
+<boolean name="identity_red_gear_is_on" value="true" />
+<string name="android_display_name">Cams Csc</string>
+<boolean name="is_logged_in" value="true" />
+<long name="last_external_image_taken_timestamp" value="0" />
+<string name="gcm_registration_id">BDEEF5FA255FD6046A8062F3E7F5C663A7779CFF21FFC1B9D50D3E785D4FC4B6</string>
+<boolean name="sync_on_feed_open" value="true" />
+<boolean name="isAccountLocked" value="false" />
+<boolean name="has_seen_new_friend_request_onboarding_message" value="true" />
+<string name="cash_customer_id">blackout1919</string>
+<string name="mobile_verification_send_to_number"></string>
+<string name="mobile_verification_key">Njg3NTpibGFja291dDE5MTk=</string>
+<int name="num_snaps_received" value="17" />
+<int name="num_best_friends" value="7" />
+<null name="suggestion_prompt_link" />
+<boolean name="smart_filters_setting" value="false" />
+<boolean name="snapcash_tos_accepted" value="true" />
+<null name="discover_resource_param_name" />
+<boolean name="has_seen_prompt_for_location_in_camera" value="true" />
+<null name="identity_pending_email" />
+<string name="device_id">a16ad813-f144-32b9-ad14-b4f4dcb55973</string>
+<long name="birthday_this_year_in_millis" value="1426834800911" />
+<boolean name="identity_is_email_verified" value="false" />
+<int name="snap_privacy_setting" value="1" />
+<string name="cash_customer_allowed">OK</string>
+<string name="year_class">{&quot;year_class&quot;:&quot;2011&quot;,&quot;total_memory&quot;:&quot;1.0&quot;,&quot;num_processors&quot;:&quot;2&quot;,&quot;display_density&quot;:&quot;DENSITY_MEDIUM&quot;}</string>
+<boolean name="has_seen_profile_page_onboarding_message" value="true" />
+<null name="suggestion_prompt_text" />
+<long name="suggestion_prompt_duration_in_millis" value="0" />
+<string name="cash_provider_name">SQUARE</string>
+<boolean name="cash_service_active" value="true" />
+<long name="last_seen_added_me_timestamp" value="1426966438753" />
+<null name="discover_resource_param_value" />
+</map>
