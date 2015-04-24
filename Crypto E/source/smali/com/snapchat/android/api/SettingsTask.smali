@@ -1,0 +1,409 @@
+.class public Lcom/snapchat/android/api/SettingsTask;
+.super Lcom/snapchat/android/api/RequestTask;
+.source "SourceFile"
+
+
+# static fields
+.field public static final SET_BIRTHDAY_ACTION_PARAM:Ljava/lang/String; = "updateBirthday"
+
+.field public static final SET_EMAIL_ACTION_PARAM:Ljava/lang/String; = "updateEmail"
+
+.field public static final SET_PRIVACY_ACTION_PARAM:Ljava/lang/String; = "updatePrivacy"
+
+.field public static final SET_SEARCHABLE_BY_PHONE_NUMBER:Ljava/lang/String; = "updateSearchableByPhoneNumber"
+
+.field public static final SET_STORY_PRIVACY_ACTION_PARAM:Ljava/lang/String; = "updateStoryPrivacy"
+
+.field private static final TASK_NAME:Ljava/lang/String; = "SettingsTask"
+
+
+# instance fields
+.field private mAction:Ljava/lang/String;
+
+.field private mData:[Ljava/lang/String;
+
+
+# direct methods
+.method public varargs constructor <init>(Ljava/lang/String;[Ljava/lang/String;)V
+    .locals 0
+    .parameter
+    .parameter
+
+    .prologue
+    .line 26
+    invoke-direct {p0}, Lcom/snapchat/android/api/RequestTask;-><init>()V
+
+    .line 27
+    iput-object p1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    .line 28
+    iput-object p2, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    .line 29
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 52
+    const-string v0, "/ph/settings"
+
+    return-object v0
+.end method
+
+.method protected a(Ljava/lang/String;I)V
+    .locals 3
+    .parameter
+    .parameter
+
+    .prologue
+    .line 47
+    invoke-static {}, Lcom/snapchat/android/util/eventbus/BusProvider;->a()Lcom/squareup/otto/Bus;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/snapchat/android/util/eventbus/ShowDialogEvent;
+
+    sget-object v2, Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;->a:Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;
+
+    invoke-direct {v1, v2, p1}, Lcom/snapchat/android/util/eventbus/ShowDialogEvent;-><init>(Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/squareup/otto/Bus;->a(Ljava/lang/Object;)V
+
+    .line 48
+    return-void
+.end method
+
+.method protected b()Landroid/os/Bundle;
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 57
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 58
+    const-string v1, "action"
+
+    iget-object v2, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 59
+    const-string v1, "username"
+
+    invoke-static {}, Lcom/snapchat/android/model/UserPrefs;->k()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 61
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v2, "updateBirthday"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string v1, "birthday"
+
+    iget-object v2, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 62
+    :cond_0
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v2, "updateEmail"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const-string v1, "email"
+
+    iget-object v2, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 63
+    :cond_1
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v2, "updatePrivacy"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const-string v1, "privacySetting"
+
+    iget-object v2, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 64
+    :cond_2
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v2, "updateStoryPrivacy"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 65
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v1, v1, v3
+
+    .line 66
+    const-string v2, "privacySetting"
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 67
+    const-string v2, "CUSTOM"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 68
+    invoke-static {}, Lcom/snapchat/android/util/GsonUtil;->a()Lcom/google/gson/Gson;
+
+    move-result-object v1
+
+    invoke-static {}, Lcom/snapchat/android/model/User;->c()Lcom/snapchat/android/model/User;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/snapchat/android/model/User;->A()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 69
+    const-string v2, "storyFriendsToBlock"
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 72
+    :cond_3
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v2, "updateSearchableByPhoneNumber"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    const-string v1, "searchable"
+
+    iget-object v2, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 74
+    :cond_4
+    return-object v0
+.end method
+
+.method protected b(Lcom/snapchat/android/model/server/ServerResponse;)V
+    .locals 4
+    .parameter
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 34
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v1, "updateBirthday"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "0000-"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/snapchat/android/model/UserPrefs;->d(Ljava/lang/String;)V
+
+    .line 35
+    :cond_0
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v1, "updateEmail"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v0, v0, v2
+
+    invoke-static {v0}, Lcom/snapchat/android/model/UserPrefs;->i(Ljava/lang/String;)V
+
+    .line 36
+    :cond_1
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v1, "updatePrivacy"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v0, v0, v2
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-static {v0}, Lcom/snapchat/android/model/UserPrefs;->c(I)V
+
+    .line 37
+    :cond_2
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v1, "updateStoryPrivacy"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 38
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v0, v0, v2
+
+    invoke-static {v0}, Lcom/snapchat/android/fragments/settings/SettingsFragment$PrivacyOptions;->valueOf(Ljava/lang/String;)Lcom/snapchat/android/fragments/settings/SettingsFragment$PrivacyOptions;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/snapchat/android/fragments/settings/SettingsFragment$PrivacyOptions;->ordinal()I
+
+    move-result v0
+
+    invoke-static {v0}, Lcom/snapchat/android/model/UserPrefs;->d(I)V
+
+    .line 40
+    :cond_3
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mAction:Ljava/lang/String;
+
+    const-string v1, "updateSearchableByPhoneNumber"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    iget-object v0, p0, Lcom/snapchat/android/api/SettingsTask;->mData:[Ljava/lang/String;
+
+    aget-object v0, v0, v2
+
+    const-string v1, "1"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    invoke-static {v0}, Lcom/snapchat/android/model/UserPrefs;->o(Z)V
+
+    .line 42
+    :cond_4
+    if-eqz p1, :cond_5
+
+    invoke-static {}, Lcom/snapchat/android/util/eventbus/BusProvider;->a()Lcom/squareup/otto/Bus;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/snapchat/android/util/eventbus/ShowDialogEvent;
+
+    sget-object v2, Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;->a:Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;
+
+    iget-object v3, p1, Lcom/snapchat/android/model/server/ServerResponse;->message:Ljava/lang/String;
+
+    invoke-direct {v1, v2, v3}, Lcom/snapchat/android/util/eventbus/ShowDialogEvent;-><init>(Lcom/snapchat/android/util/eventbus/ShowDialogEvent$DialogType;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/squareup/otto/Bus;->a(Ljava/lang/Object;)V
+
+    .line 43
+    :cond_5
+    return-void
+.end method
+
+.method protected c()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 79
+    const-string v0, "SettingsTask"
+
+    return-object v0
+.end method
