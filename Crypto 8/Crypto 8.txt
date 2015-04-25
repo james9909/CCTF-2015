@@ -1,0 +1,3 @@
+I went on Google, and I kept trying ciphers until I found the Caesar Box cipher. It managed to actually print out words relating to the CTF, but they were still jumbled. Then I found that the Caesar Box cipher 
+was a type of transposition cipher in which the length of a cipher text must be a square. I checked how many characters were in
+the ciphertext, and I found that there were 196 characters. Using a transposition cipher solver, I inputted the cipher text with a key length of 14. That's how I got the flag.

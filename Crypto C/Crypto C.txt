@@ -1,0 +1,2 @@
+I opened the png in Gimp and decomposed the picture. What appeared was
+something like a QR code. However, its corners were missing. Once we copied the corners into the png, we scanned it and got the flag.
