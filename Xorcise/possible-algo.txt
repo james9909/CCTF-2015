@@ -7,7 +7,7 @@ key_set(str):
     v1, v2 are things
     repeat 43 times:
         v3 = 128 * (n % lola) ^ n
-        v4 = v3 % lolb / 64 ^ v3
+        v4 = (1/64) * (v3 % lolb) ^ v3
         v2 = 32 * (v4 % lolc) ^ v4
         v1 = v2
         n = v2
