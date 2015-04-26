@@ -1,0 +1,3 @@
+Disassembling the java binary will reveal the java code.
+Reading the java reveals that xor-ing the each element of arrayOfInt2 with 0x1092 will
+yield the flag.

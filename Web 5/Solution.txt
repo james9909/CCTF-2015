@@ -1,1 +1,4 @@
-Change User-agent to Googlebot's and referer to NSA's website.
+Run the python script, which changes User-agent to Googlebot's and referer to NSA's website.
+
+Alternative:
+    curl -A "Googlebot/2.1 (+http://www.google.com/bot.html)" -e "https://www.nsa.gov" http://web.camsctf.com/5/

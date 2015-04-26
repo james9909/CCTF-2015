@@ -1,2 +1,2 @@
-Go to facebook and search l0rd.h3l1x@gmail.com
-flag = {fAcebo0k_s3cUr1ty}
+Go to facebook and search for l0rd.h3l1x@gmail.com.
+Looking through his page reveals the flag.

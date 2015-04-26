@@ -1,0 +1,4 @@
+Looking up CAMS CSC's youtube channel and looking through each video's description will
+eventually lead to the flag.
+Here's the actual url:
+https://www.youtube.com/watch?v=b7oe7_xgFRc

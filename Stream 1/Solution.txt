@@ -8,7 +8,7 @@ if we type in:
 
     dir /r
 
-We can see that there is a hidden file called secret.docx:flag.txt, with flag.txt
+We can see that there is a file called secret.docx:flag.txt, with flag.txt
 being in an alternate data stream. By cat-ting the file with
 
     cat secret.docx:flag.txt

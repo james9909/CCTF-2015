@@ -1,1 +1,1 @@
-The text is in hex, so if we decode that, we get the flag.
+The text is in hex, so if we decode it into ascii, we get the flag.

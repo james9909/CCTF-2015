@@ -1,1 +1,0 @@
-Xor the each element of arrayOfInt2 with 0x1092.

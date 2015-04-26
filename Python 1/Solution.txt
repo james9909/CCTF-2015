@@ -1,0 +1,2 @@
+Formatting the code reveals several strings encoded in base64.
+If we take one of the strings, and decode it, we get the flag.

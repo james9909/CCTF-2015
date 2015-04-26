@@ -1,0 +1,2 @@
+Looking through the hex of the excel file reveals a flag.txt hidden within it.
+Unzipping the file yields the flag.

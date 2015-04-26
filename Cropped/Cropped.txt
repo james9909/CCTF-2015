@@ -1,1 +1,0 @@
-I found the flag by opening up the picture with Notepad++ and looking through it.

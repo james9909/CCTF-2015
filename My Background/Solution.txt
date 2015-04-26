@@ -1,2 +1,1 @@
-Viewing the picture in notepad or any plain text editor will reveal the flag, but
-so will viewing its hex code.
+Performing 'strings black.png' or viewing the hex will yield the flag.

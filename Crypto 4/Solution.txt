@@ -1,2 +1,2 @@
-The cipher is actually encrypted in base 36, so if we decode that, we get a string
-with the flag, which is analysis in l33t sp34k
+The cipher is actually encrypted in base 36 (a-z + 0-9), so if we decode that, we get a string
+with the flag, which is just 4n4ly5i5.

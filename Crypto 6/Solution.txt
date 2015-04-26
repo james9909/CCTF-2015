@@ -1,3 +1,4 @@
 This is a two step process, with the first step being to remove one backslash from
 each set of two backslashes.
-Then, proceed to take a lot of time reading out the txt
+Then, proceed to take a lot of time reading out the text. They are all characters
+of the alphabet, but just represented using other symbols. Example: "|-|" is "H"

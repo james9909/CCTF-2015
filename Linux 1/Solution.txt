@@ -1,1 +1,1 @@
-This just appeared in my directory lol
+View the log of the virtual machine to get the flag.

@@ -1,0 +1,1 @@
+Convert the cipher text from base64 to ascii to get the flag.

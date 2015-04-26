@@ -1,0 +1,2 @@
+The ciphertext is encrypted using AES, so decrypting it from AES using the password 123456, which
+is the file name gives the flag.

@@ -1,1 +1,3 @@
-Randomly guessing letmein revealed the flag.
+The hint tells us to remember the last time we tried to guess the admin password.
+This means that the password can be easily guessed. Guessing a series of bad passwords,
+including 'letmein' yielded the flag.

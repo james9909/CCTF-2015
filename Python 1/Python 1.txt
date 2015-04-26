@@ -1,3 +1,0 @@
-I just spaced/formatted the code to see it better. Then I saw 3 gibberish things: one long base64 string, a shorter
-base64 string, and another encrypted string. I decoded the longer one and found weird things, but I got the flag
-when I decoded the shorter base64 string. {n3v3r_use_EVAL}

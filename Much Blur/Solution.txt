@@ -1,0 +1,6 @@
+We used gimp to find the flag:
+First we opened the picture in Gimp. Then we destripped the picture by going to
+Filters --> Enhance. After that, we tried to unblur the picture by using
+Unsharp Mask, also in Enhance. Using a combination of Unsharp Mask and
+by changing the brightness by going to Colors --> Brightness-Contrast,
+we were able to unblur the hidden text, which was the flag.

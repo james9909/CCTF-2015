@@ -11,13 +11,13 @@ prep_request = session.prepare_request(req)
 output = session.send(prep_request)
 print output.text
 
-# After this we get some mad weird stuff
+# After this we get the cipher
 req=Request('WHEN',  SERVER, headers=HEADERS)
 prep_request = session.prepare_request(req)
 output = session.send(prep_request)
 print output.text
 
-# Refresh
+# Refresh and get the key
 req = Request('PROPFIND',  SERVER, headers=HEADERS)
 prep_request = session.prepare_request(req)
 output = session.send(prep_request)

@@ -1,1 +1,3 @@
-Searching for { in cats.txt yields the flag
+Basically this is the same as Stream 1, but with more streams.
+Running the batch script, which goes through each hidden file and grepping for a '{'
+yields the flag.

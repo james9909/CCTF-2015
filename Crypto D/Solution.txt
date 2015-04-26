@@ -1,0 +1,5 @@
+The problem tells us the number is semi-prime, which means that it is the product of
+two primes. We can guess now that the cipher used was RSA, and that the semi-prime
+is the product of p and q. The hint revealed that the exponent used would be the most
+commonly used one, which is 65537. In order to get the primes from the semi prime, we used msieve, which was in another hint.
+Running decode.py reveals the flag.

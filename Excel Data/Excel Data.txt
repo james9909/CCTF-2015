@@ -1,2 +1,0 @@
-I opened the file using a hex editor and saw that there was a flag.txt file within the excel
-file, so I unzipped the excel file to get the flag.

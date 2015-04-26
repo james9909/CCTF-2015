@@ -1,2 +1,0 @@
-When I saw the hint about Americans, I found that the ciphertext was encrypted using AES. Then I decrypted it 
-using the filename, 123456, as the password.

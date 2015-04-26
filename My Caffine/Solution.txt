@@ -1,5 +1,5 @@
 Coffee-pot-command refers to hyper text coffee pot control protocol.
 We send commands using either BREW or post, with Content-Type set to 'application/coffee-pot-command'.
-If we send 23 using POST, we get a message saying that the coffee is beginning to be made.
+If we send 23 as data using POST, we get a message saying that the coffee is beginning to be made.
 Then, we send a WHEN request, and when we do that, we are given some sort of cipher.
 If we then send a PROPFIND request, we are given the encryption method to decrypt the cipher, which is the flag.
